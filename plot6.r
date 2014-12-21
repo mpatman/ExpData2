@@ -24,7 +24,7 @@ MVPM25ByYearAndRegionNorm <- transform(MVPM25ByYearAndRegion,
                                                               Emissions / Balt1999Emissions,
                                                               Emissions / LAC1999Emissions))
 
-png(filename = "plot6.png", width = 480, height = 480)
+png(filename = "plot6.png", width = 600, height = 480)
 
 qplot(year, EmissionsNorm, data=MVPM25ByYearAndRegionNorm, geom="line", 
       color=region) + ggtitle(expression("Total" ~ PM[2.5] ~
